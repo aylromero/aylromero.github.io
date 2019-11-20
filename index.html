@@ -11,8 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet"/>
         <link href="assets/img/icon.png" rel="shortcut icon"/>
     </head>
-</html>
-<body id="particles-js">
+<body id="particles-js" class="color-change-5x">
     <div :class="{'dark-mode': darkMode}" id="main-app">
         <div @click="toggleDarkMode()" id="dark-mode-toggle">
             <i :class="[darkMode ? 'fas' : 'far', 'fa-lightbulb']">
@@ -21,10 +20,10 @@
         <div :class="{'page-section': true, 'about-switched-on': aboutSwitchedOn}" id="intro-section">
             <div class="section-wrapper">
                 <div class="name-heading-wrapper">
-                    <h1 id="name-heading">
+                    <h1 id="name-heading" class="tracking-in-expand ">
                         Aylén Azul Romero
                     </h1>
-                    <h2 id="name-subheading">
+                    <h2 id="name-subheading" class="text-focus-in">
                         Full-Stack Web Developer
                     </h2>
                     <div class="about-me">
@@ -168,6 +167,5 @@
     </script>
     <script src="js/app.js">
     </script>
-    <script src="js/stats.js">
-    </script>
 </body>
+</html>
