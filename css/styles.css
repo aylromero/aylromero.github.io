@@ -7,23 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-#circle {
-    font-size: 25px;
-    color: #fff;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin: 5px;
-    background-color: #FFA010;
+    font-weight: bold;
 }
 h2 {
     font-family: 'Patua One', cursive !important;
@@ -56,6 +40,25 @@ h1, h2 {
     font-size: 0.5rem;
     transition: font-size 0.5s, height 0.5s, opacity 0.5s;
 }
+.about-switched-on .name-heading-wrapper #name-heading {
+    font-size: 3.5rem;
+    transition: font-size 0.5s;
+}
+.about-switched-on .name-heading-wrapper #name-subheading {
+    font-size: 1.5rem;
+    transition: font-size 0.5s;
+}
+.about-switched-on .name-heading-wrapper {
+    padding-top: 5vh;
+    transition: padding-top 0.5s;
+}
+.about-switched-on .about-me {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    font-size: 1.1rem;
+    transition: font-size 0.5s, height 1s, opacity 1s;
+}
 a, a:visited {
     color: #2b9cce;
     text-decoration: none;
@@ -66,201 +69,6 @@ a:hover, a:focus {
     color: #FF8700;
     cursor: pointer;
 }
-/* dark mode */
-
-/* dark-mode toggle */
-
-#dark-mode-toggle {
-    position: fixed;
-    top: 3vh;
-    right: 3vh;
-    font-size: 2.5rem;
-    color: black;
-    border: 1px black;
-    border-radius: 100%;
-    width: 4rem;
-    height: 4rem;
-    background-color: rgba(0, 0, 0, 0.1)!important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-name: blink;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-}
-.dark-mode #dark-mode-toggle {
-    color: yellow;
-    ;
-    animation-name: unset;
-}
-#dark-mode-toggle:hover {
-    cursor: pointer;
-    color: yellow;
-    animation-name: unset;
-}
-/* dark-mode sections and elements */
-
-.dark-mode #attention-grabber {
-    background: #2b9cce;
-    animation-name: unset;
-}
-.dark-mode #projects-section {
-    background-color: black;
-    color: white;
-    transition: background 1s, color 1s;
-}
-.dark-mode .project-tags .project-tag {
-    color: black;
-    font-weight: bold;
-}
-.dark-mode .one-project {
-    box-shadow: 0px 5px 4px #0b182f;
-    color: black;
-    background-color: white;
-    transition: background 1s, color 1s, box-shadow 1s;
-}
-.dark-mode .section-title {
-    background-color: black;
-    color: white;
-    transition: color 1s, background 1s;
-}
-.dark-mode #intro-section {
-    background: black;
-    color: white;
-    transition: background 1s, color 1s;
-}
-.dark-mode .one-link i {
-    color: white;
-    transition: color 1s;
-}
-.dark-mode .one-link i {
-    color: white;
-    transition: color 1s;
-}
-.dark-mode .one-link:hover {
-    color: #8300FF;
-}
-.dark-mode .one-link:hover>a, .dark-mode .one-link:hover>i, .dark-mode .one-link:hover>.link-label {
-    color: #8300FF;
-    transition: color 0s;
-}
-.dark-mode .one-link:hover>a>i, .dark-mode .one-link:hover>a>.link-label {
-    color: #8300FF;
-    transition: color 0s;
-}
-.dark-mode .link-label {
-    color: white;
-    transition: color 1s;
-}
-.dark-mode #contact-section p {
-    color: black;
-    transition: color 1s;
-}
-.dark-mode #contact-section {
-    background-color: black;
-    color: white;
-    transition: background 1s, color 1s;
-}
-/* SECTION DEFINITIONS */
-
-.page-section {
-    display: flex;
-}
-.section-wrapper {
-    display: flex;
-    padding: 10px;
-    /* just a little padding */
-    flex-direction: column;
-    width: 100%;
-    max-width: 800px;
-    box-sizing: border-box;
-}
-.section-title {
-    color: black;
-    margin: 5vh auto;
-    width: 25%;
-    text-align: center;
-}
-.section-title h2 {
-    font-family: 'Patua One', cursive !important;
-    font-size: 3.5rem;
-    font-weight: 400;
-}
-/* toggled */
-
-.intro-on-toggle #name-heading {
-    font-size: 3rem;
-    transition: font-size 0.5s;
-}
-.intro-on-toggle #name-subheading {
-    font-size: 1.5rem;
-    transition: font-size 0.5s;
-}
-.intro-on-toggle .section-wrapper {
-    padding-top: 5px;
-}
-#intro-section {
-    min-height: 100vh;
-    justify-content: center;
-    transition: color 1s, background 1s;
-}
-#intro-section .section-wrapper {
-    text-align: center;
-    padding: 0;
-}
-#projects-section .section-wrapper {
-    max-width: 1000px
-}
-.name-heading-wrapper {
-    padding-top: 25vh;
-    transition: padding-top 0.5s;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-/* contact page */
-
-#contact-section {
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
-    background-color: white;
-    padding-bottom: 5vh;
-    box-sizing: border-box;
-    color: black;
-    transition: background 1s;
-}
-#contact-section .section-wrapper {
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-#contact-card {
-    flex-direction: column;
-    max-width: 600px;
-}
-#contact-info {
-    line-height: 1.8;
-    text-align: center;
-    max-width: 600px;
-    padding: 2rem 0;
-    font-size: 1.3rem;
-    padding: 1.3rem;
-}
-#photo-wrapper {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 5px 5px 0 0;
-    background-color: black;
-    transition: background 1s;
-    height: 40vh;
-    width: 100%;
-    background-size: cover;
-    transition: background 1s;
-}
-/* projects page */
-
 #projects-section {
     flex-direction: column;
     min-height: 100vh;
@@ -270,8 +78,6 @@ a:hover, a:focus {
     padding-bottom: 5vh;
     transition: background 1s;
 }
-/* single project */
-
 .one-project {
     display: flex;
     flex-direction: row-reverse;
@@ -341,8 +147,6 @@ span, p {
 .project-links {
     font-weight: 600;
 }
-/* nav links */
-
 .links {
     display: flex;
     justify-content: space-between;
@@ -356,11 +160,9 @@ span, p {
     justify-content: center;
     color: black;
     font-weight: 400;
-    /*transition: color 1s;*/
 }
 .one-link i {
     font-size: 2rem;
-    /*transition: color 1s;*/
 }
 .one-link:hover {
     color: #8300FF;
@@ -373,51 +175,169 @@ span, p {
 }
 .one-link .link-label {
     padding-top: 1rem;
-    /*    transition: color 1s;*/
 }
-.selected-link {
-    color: #2b9cce;
+#dark-mode-toggle {
+    position: fixed;
+    top: 3vh;
+    right: 3vh;
+    font-size: 2.5rem;
+    color: black;
+    border: 1px black;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.1)!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: blink;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
-.selected-link:hover {
-    /*    color: #f3f3f3;
-    background: #696868;
-    border: 1px solid gray;*/
+.dark-mode #dark-mode-toggle {
+    color: yellow;
+    ;
+    animation-name: unset;
 }
-/* turned on*/
-
-.about-switched-on .name-heading-wrapper #name-heading {
+#dark-mode-toggle:hover {
+    cursor: pointer;
+    color: yellow;
+    animation-name: unset;
+}
+.dark-mode #projects-section {
+    background-color: black;
+    color: white;
+    transition: background 1s, color 1s;
+}
+.dark-mode .project-tags .project-tag {
+    color: black;
+    font-weight: bold;
+}
+.dark-mode .one-project {
+    box-shadow: 0px 5px 4px #0b182f;
+    color: black;
+    background-color: white;
+    transition: background 1s, color 1s, box-shadow 1s;
+}
+.dark-mode .section-title {
+    background-color: black;
+    color: white;
+    transition: color 1s, background 1s;
+}
+.dark-mode #intro-section {
+    background: black;
+    color: white;
+    transition: background 1s, color 1s;
+}
+.dark-mode .one-link i {
+    color: white;
+    transition: color 1s;
+}
+.dark-mode .one-link i {
+    color: white;
+    transition: color 1s;
+}
+.dark-mode .one-link:hover {
+    color: #8300FF;
+}
+.dark-mode .one-link:hover>a, .dark-mode .one-link:hover>i, .dark-mode .one-link:hover>.link-label {
+    color: #8300FF;
+    transition: color 0s;
+}
+.dark-mode .one-link:hover>a>i, .dark-mode .one-link:hover>a>.link-label {
+    color: #8300FF;
+    transition: color 0s;
+}
+.dark-mode .link-label {
+    color: white;
+    transition: color 1s;
+}
+.dark-mode #contact-section p {
+    color: black;
+    transition: color 1s;
+}
+.dark-mode #contact-section {
+    background-color: black;
+    color: white;
+    transition: background 1s, color 1s;
+}
+.page-section {
+    display: flex;
+}
+.section-wrapper {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+.section-title {
+    color: black;
+    margin: 5vh auto;
+    width: 25%;
+    text-align: center;
+}
+.section-title h2 {
+    font-family: 'Patua One', cursive !important;
     font-size: 3.5rem;
+    font-weight: 400;
+}
+.intro-on-toggle #name-heading {
+    font-size: 3rem;
     transition: font-size 0.5s;
 }
-.about-switched-on .name-heading-wrapper #name-subheading {
+.intro-on-toggle #name-subheading {
     font-size: 1.5rem;
     transition: font-size 0.5s;
 }
-.about-switched-on .name-heading-wrapper {
-    padding-top: 5vh;
+.intro-on-toggle .section-wrapper {
+    padding-top: 5px;
+}
+#intro-section {
+    min-height: 100vh;
+    justify-content: center;
+    transition: color 1s, background 1s;
+}
+#intro-section .section-wrapper {
+    text-align: center;
+    padding: 0;
+}
+#projects-section .section-wrapper {
+    max-width: 1000px
+}
+.name-heading-wrapper {
+    padding-top: 25vh;
     transition: padding-top 0.5s;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
-.about-switched-on .about-me {
-    visibility: visible;
-    opacity: 1;
-    height: auto;
-    font-size: 1.1rem;
-    transition: font-size 0.5s, height 1s, opacity 1s;
+#contact-section {
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
+    color: black;
+    transition: background 1s;
 }
-/* MOBILE STYLING */
+#contact-section .section-wrapper {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 
 @media handheld, screen and (max-width: 700px) {
-    /* SECTION DEFINITIONS */
-    /* INDIVIDUAL SECTIONS */
-    /* intro page */
+
     #name-heading {
         font-size: 2.2rem;
     }
     #name-subheading {
         font-size: 1.3rem;
     }
-    /* projects page */
-    /* single project */
     .one-project {
         flex-direction: column;
     }
@@ -446,7 +366,6 @@ span, p {
     .project-body .project-description {
         font-size: 0.85em;
     }
-    /* nav links */
     .links {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -482,7 +401,6 @@ span, p {
         font-size: 1.6rem;
         display: none;
     }
-    /* turned on*/
     .about-me {
         width: 90%;
         font-size: 0.3rem;
@@ -503,7 +421,6 @@ span, p {
     .section-title {
         width: initial;
     }
-    /* contact page */
     #contact-info {
         font-size: 1rem;
         padding: 0.8rem;
@@ -521,7 +438,6 @@ span, p {
     #contact-section .section-wrapper {
         justify-content: flex-start;
     }
-    /* dark mode */
     #dark-mode-toggle {
         font-size: 1.5rem;
         width: 3rem;

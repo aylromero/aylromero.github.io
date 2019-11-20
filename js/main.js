@@ -4,10 +4,8 @@ let projects = new Vue ({
         projects: allProjects,
     },
     methods: {
-
     }
 });
-
 let app = new Vue ({
     el: "#main-app",
     data: {
