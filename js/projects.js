@@ -24,9 +24,19 @@ var allProjects = {
         type: "big",
         name: "TGIF",
         tags: ["JavaScript", "AJAX", "RESTful", "Vue.js", "Bootstrap", "CSS3", "HTML5"],
-        pictures: ["tgif.gif"],
+        pictures: ["landing.gif"],
         description: "Transparent Government In Fact Most/Least Party Loyalty and Most/Least Attendance Statistics. Connected to API pro public US Congress data. Access to personal senators web sites.",
         github: "https://aylromero.github.io/pro-publica-api",
         live: "https://github.com/aylromero/pro-publica-api/"
+    },
+    landing: {
+        category: "landing",
+        type: "big",
+        name: "landing-page",
+        tags: ["HTML5", "CSS3", "Boostrap"],
+        pictures: ["landing.gif"],
+        description: "A responsive landing page template",
+        github: "https://aylromero.github.io/landing-page/",
+        live: "https://github.com/aylromero/landing-page"
     },
 }
