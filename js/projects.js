@@ -30,13 +30,13 @@ var allProjects = {
         live: "https://github.com/aylromero/pro-publica-api/"
     },
     landing: {
-        category: "landing",
+        category: "landing-page",
         type: "big",
         name: "Landing Page",
-        tags: ["HTML5", "CSS3", "Boostrap"],
+        tags: ["Bootstrap", "CSS3", "HTML5"],
         pictures: ["landing.gif"],
-        description: "A responsive landing page template",
-        github: "https://aylromero.github.io/landing-page/",
+        description: "A responsive landing page template.",
+        github: "https://aylromero.github.io/landing-page",
         live: "https://github.com/aylromero/landing-page"
     },
 }
