@@ -32,7 +32,7 @@ var allProjects = {
     landing: {
         category: "landing",
         type: "big",
-        name: "landing-page",
+        name: "Landing Page",
         tags: ["HTML5", "CSS3", "Boostrap"],
         pictures: ["landing.gif"],
         description: "A responsive landing page template",
