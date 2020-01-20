@@ -24,7 +24,7 @@ var allProjects = {
         type: "big",
         name: "TGIF",
         tags: ["JavaScript", "AJAX", "RESTful", "Vue.js", "Bootstrap", "CSS3", "HTML5"],
-        pictures: ["landing.gif"],
+        pictures: ["tgif.gif"],
         description: "Transparent Government In Fact Most/Least Party Loyalty and Most/Least Attendance Statistics. Connected to API pro public US Congress data. Access to personal senators web sites.",
         github: "https://aylromero.github.io/pro-publica-api",
         live: "https://github.com/aylromero/pro-publica-api/"
